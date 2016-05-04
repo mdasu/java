@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="person" class="asu.edu.spring.test.springTest.Person">
+		<constructor-arg value="12345" name="ID"></constructor-arg>
+		<constructor-arg name="name" value="Joe Smith"></constructor-arg>
+		<property name="taxId" value="233"></property>
+		<property name="address" ref="address"></property>
+	</bean>
+
+	<bean id="address" class="asu.edu.spring.test.springTest.Address">
+		<constructor-arg name="street" value="1 Main Street"></constructor-arg>
+		<constructor-arg name="postCode" value="83734"></constructor-arg>
+	</bean>
+</beans>
