@@ -43,7 +43,6 @@ public class WeatherService {
 						if (qName.length() > 0) {
 							printData = true;
 						}
-
 					}
 
 					public void endElement(String uri, String localName, String qName) throws SAXException {
@@ -59,9 +58,7 @@ public class WeatherService {
 							System.out.println(xmlData);
 							printData = false;
 						}
-
 					}
-
 				};
 
 				try {
