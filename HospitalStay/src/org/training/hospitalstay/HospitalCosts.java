@@ -1,4 +1,4 @@
-package org.training;
+package org.training.hospitalstay;
 
 import java.util.Scanner;
 
