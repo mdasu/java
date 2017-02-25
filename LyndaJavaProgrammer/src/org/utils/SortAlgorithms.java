@@ -11,7 +11,7 @@ public class SortAlgorithms {
 		SelectionSort(numbers);
 		
 		int[] numbersSort = { 2,10,12, 15 };
-		BinarySearch(numbersSort,15);
+		BinarySearch(numbers,43);
 
 		int[] numArray = { 15, 4, 2, 3, 25 };
 		//InsertSort(numArray);
@@ -69,8 +69,10 @@ public class SortAlgorithms {
 				lowerBound = posn++;
 			posn = ((upperBound + lowerBound) / 2);
 		}
-		
-		System.out.println("Found: ");
+		if (lowerBound < upperBound)
+		  System.out.println(key + " found at position: " + posn);
+		else
+		  System.out.println(key + " not found! ");
 	}
 
 	// 0
