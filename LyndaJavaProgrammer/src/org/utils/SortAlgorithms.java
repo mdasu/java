@@ -63,6 +63,7 @@ public class SortAlgorithms {
 
 		while (array[posn] != key && lowerBound <= upperBound) {
 
+			System.out.println("looping...");
 			if (array[posn] > key)
 				upperBound = posn--;
 			else
